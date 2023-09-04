@@ -1,0 +1,55 @@
+body {
+    background-color: #010101;
+}
+
+#spilbræt {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin: auto;
+    background: url(board_v.2.0.png)
+}
+
+#beskedomrade {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    color: #53af13;
+    font-size: 20px;
+}
+
+table {
+    position: absolute;
+    left: 173px;
+    top: 98px;
+    border-spacing: 0px;
+}
+
+td {
+    width: 94px;
+    height: 94px;
+    border: 1.5px solid #3E821A;
+}
+
+form {
+    width: 16.6em;
+    margin-left: 370px;
+    padding: 15px;
+    background-color: rgb(83, 175, 19);
+}
+
+form input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 1em;
+    
+}
+
+.hit {
+    background: url("ship_new.png") no-repeat center center;
+}
+
+.miss {
+    background: url("miss_new.png") no-repeat center center;
+}
+
