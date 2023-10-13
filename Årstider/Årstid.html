@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Årstid.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Se hvilken årstid vi har</h1>
+    
+
+    <form onsubmit="return indtast()">
+        <input type="text" id="måned" placeholder="Hvad måned har vi nu?">
+        <button type="submit" id="knap">Se</button>
+    </form>
+
+    <div id="årstidsBilleder">
+    <img id="forår-billede" src="./Billeder/Forår.png" >
+    <img id="sommer-billede" src="./Billeder/Sommer.png"> 
+    <img id="efterår-billede" src="./Billeder/Efterår.png"> 
+    <img id="vinter-billede" src="./Billeder/Vinter.png"> 
+    </div>
+
+    <div id="beskedomrade">
+
+</div>
+<!-- 
+<button id="darkMode" onclick="toogleDarkMode()">Dark mode</button>
+
+<button id="lightMode" onclick="toogleLightMode()">Light mode</button>
+-->
+
+    <script src="Årstid.js"></script>
+</body>
+</html>
