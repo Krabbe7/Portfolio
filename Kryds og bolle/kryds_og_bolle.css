@@ -1,0 +1,104 @@
+section {
+    text-align: center;
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #353535;
+}
+
+#spil-container {
+    width: 300px;
+    margin: 50px auto;
+}
+
+.grid {
+    width: 100%
+}
+
+.cell {
+    width: 33.33%;
+    height: 100px;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+table, th, td {
+    border: 2px solid #52bd6e;
+    border-collapse: collapse;
+}
+
+.genstartSpil {
+    box-shadow: 0px 3px 4px -2px #000000;
+    border: none;
+    background-color: #52bd6e;
+    border-radius: 11px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+}
+
+.genstartSpil:hover {
+    background-color: #3da859;
+}
+
+.vaelgxo {
+    width: 340px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #52bd6e;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 3px 4px -2px #000000;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #616161;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h3 {
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.vaelgX, .vaelgO {
+    box-shadow: 0px 3px 4px -2px #000000;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 11px;
+    display: inline-block;
+    cursor: pointer;
+    color: #1d1d1d;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    margin: 10px 10px 40px 10px;
+}
+
+.vaelgX:hover {
+    background-color: #dadada;
+}
+
+.vaelgO:hover {
+    background-color: #dadada;
+}
+
+.cell[data-symbol="X"] {
+    color: #E6575B;
+}
+
+.cell[data-symbol="O"] {
+    color: #5766E6;
+}
