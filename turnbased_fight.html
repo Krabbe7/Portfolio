@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="turnbased_fight.css" />
+  <link rel="stylesheet" href="turnbased_fight_smallerScrn.css" />
+</head>
+
+<body>
+  <div id="gameContainer">
+    <div id="windowContainer1">
+      <div id="begyndKampDiv">
+        <h1 class="spiltitel">Dragens hævn</h1>
+
+        <p id="introtext">
+          I det fjerne kongerige Eldoria hviler en skygge, der truer med at
+          sluge alt på sin vej. En gammel drage, som engang blev forvist for
+          århundreder siden, er vendt tilbage for at hævne sig på landet. Dragen
+          har samlet en hær af frygtindgydende fjender til at hjælpe med, at
+          underkaste kongeriget under sine flammende vinger. Midt i dette kaos
+          træder en ukendt helt frem.
+          <br>
+          <br>
+          En simpel kriger, valgt af skæbnen, bærer byrden af at redde Eldoria
+          fra Dragens flammende vrede. Kan han mon klare opgaven, og sætte en
+          stopper for dragens ødelæggelse?
+        </p>
+        <button id="startKamp">Start kamp</button>
+
+      </div>
+    </div>
+    <div id="windowContainer2">
+
+      <div id="dig">
+        <div id="dmgNumberContainer">
+          <p id="dmgNumberHero"></p>
+        </div>
+        <div id="healNumberContainer">
+          <p id="healNumberHero"></p>
+        </div>
+        <div id="heroImgContainer">
+          <img id="heroCharImg" src="Billeder/Hero.png" />
+        </div>
+      </div>
+
+      <div id="fjende">
+        <div id="dmgNumberFjendeContainer">
+          <p id="dmgNumberFjende"></p>
+        </div>
+        <div id="healNumberFjendeContainer">
+          <p id="healNumberFjende"></p>
+        </div>
+        <div id="fjendeImgContainer">
+          <img id="fjendeCharImg" src="./Billeder/Dark-slime.png" />
+        </div>
+
+      </div>
+    </div>
+    <div id="windowContainer3">
+      <h2 id="spilstatus"></h2>
+    </div>
+    <div id="windowContainer4">
+      <div id="digInfo">
+
+        <div id="heroInfo">
+          <div id="heroNavnLevelContainer">
+            <p id="heroNavn">Hero</p>
+
+            <div id="levelHeroContainer">
+              <div id="cirkel">
+                <p id="heroLevel"></p>
+              </div>
+            </div>
+          </div>
+          <div class="statusBar">
+            <div id="hpBar">
+              <div id="hpFill"></div>
+              <p id="hpialtdig">Hp: <span id="HPdig"></span>/<span id="maxHPdig"></span></p>
+            </div>
+
+            <div id="manaBar">
+              <div id="manaFill"></div>
+              <p id="mpialtdig">Mana: <span id="MPDig"></span>/<span id="maxMPDig"></span></p>
+            </div>
+          </div>
+          <div id="expBar">
+            <div id="expFill"></div>
+            <p id="exp">Exp: <span id="expDig"></span>/<span id="maxExpDig"></span></p>
+
+          </div>
+        </div>
+        <div id="actionsDig">
+          <button id="attackDig">
+            <p>Attack</p>
+          </button>
+          <button id="spcAttackDig">
+            <p>Special attack</p>
+          </button>
+          <button id="healbredDig">
+            <p>Heal</p>
+          </button>
+        </div>
+      </div>
+
+      <div id="fjendeInfo">
+        <div id="fjendeNavnLevelContainer">
+          <p id="fjendeNavn"></p>
+
+          <div id="levelFjendeContainer">
+            <div id="cirkel">
+              <p id="fjendeLevel"></p>
+            </div>
+          </div>
+        </div>
+        <div class="statusBar">
+          <div id="hpBar">
+            <div id="hpFillFjende"></div>
+            <p id="hpialtfjende">Hp: <span id="HPfjende"></span>/<span id="MaxHPfjende"></span></p>
+          </div>
+
+          <div id="manaBar">
+            <div id="manaFillFjende"></div>
+            <p id="mpialtfjende">Mana: <span id="mpfjende"></span>/<span id="maxMPFjende"></span></p>
+          </div>
+        </div>
+        <button id="aabenKiste">Åben</button>
+        <button id="gendanHP">Hvil</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>

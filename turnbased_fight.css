@@ -1,0 +1,430 @@
+#gameContainer {
+  width: 1200px;
+  margin: auto;
+}
+
+#windowContainer1 {
+  position: relative;
+  z-index: 1;
+  height: 1000px;
+  background-image: url("./Billeder/scroll_start.png");
+}
+
+#windowContainer2 {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  display: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 100px;
+  background-position: bottom;
+  padding-bottom: 50px;
+}
+
+#windowContainer3 {
+  text-align: center;
+  display: none;
+}
+
+#windowContainer4 {
+  position: relative;
+  z-index: 1;
+  height: 290px;
+  display: none;
+  background-color: #E1BFA2;
+}
+
+#introtext {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.spiltitel {
+  font-size: 40px;
+}
+
+#begyndKampDiv {
+  position: absolute;
+  z-index: 2;
+  margin-top: 150px;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#startKamp,
+#naesteKamp,
+#proevIgen,
+#spilFaerdig {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 0 40px;
+  margin: 10px;
+  height: 48px;
+  line-height: 45px;
+  border-radius: 7px;
+  background: #412c30;
+  color: white;
+  font-size: 22px;
+}
+
+#startKamp:hover,
+#naesteKamp:hover,
+#proevIgen:hover {
+  background: #614247;
+}
+
+#startKamp {
+  margin-top: 70px;
+}
+
+#aabenKiste,
+#gendanHP {
+  display: none;
+  cursor: pointer;
+  border: none;
+  padding: 0 50px;
+  margin: 10px;
+  height: 48px;
+  line-height: 45px;
+  border-radius: 7px;
+  background: #412c30;
+  color: white;
+  font-size: 22px;
+}
+
+#heroNavn,
+#fjendeNavn {
+  display: inline-block;
+}
+
+#levelHeroContainer,
+#levelFjendeContainer {
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#heroNavn,
+#fjendeNavn {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px 0px;
+
+}
+
+#heroNavnLevelContainer,
+#fjendeNavnLevelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heroLevel,
+#fjendeLevel {
+  font-weight: 600;
+}
+
+#cirkel {
+  background-color: #5e5959;
+  border: 2px solid #ceaf32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ceaf32;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+#spilstatus {
+  background: #614247;
+  color: #fff;
+  padding: 10px 0px;
+  margin: 0;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+
+}
+
+#attackDig,
+#spcAttackDig,
+#healbredDig {
+  cursor: pointer;
+  display: inline-block;
+  background: #333;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  padding: 16px 24px;
+  width: 140px;
+  height: 70px;
+  margin: 20px 5px;
+  border-radius: 12px;
+  vertical-align: top;
+}
+
+#attackDig p,
+#spcAttackDig p,
+#healbredDig p {
+  margin: 0px;
+}
+
+#attackDig:hover,
+#spcAttackDig:hover,
+#healbredDig:hover {
+  background: #4e4e4e;
+}
+
+#dig,
+#fjende,
+#digInfo,
+#fjendeInfo {
+  text-align: center;
+}
+
+#dig,
+#digInfo {
+  width: 50%;
+  margin-right: 5%
+}
+
+#fjende,
+#fjendeInfo {
+  width: 50%;
+  margin-left: 5%
+}
+
+#dig,
+#fjende {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+#heroImgContainer,
+#fjendeImgContainer {
+  height: auto;
+}
+
+#dmgNumberContainer,
+#healNumberContainer {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  font-size: 50px;
+
+}
+
+#dmgNumberFjendeContainer,
+#healNumberFjendeContainer {
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  transform: translate(50%, -100%);
+  font-size: 50px;
+
+}
+
+#dmgNumberHero.active,
+#dmgNumberFjende.active {
+  margin: 0;
+  color: #ee1010;
+  font-weight: bold;
+  animation: flyUpAndDisappear 2s ease-out forwards;
+  text-shadow:
+    0.5px 0.5px #202020,
+    -0.5px 0.5px #202020,
+    -0.5px -0.5px #202020,
+    0.5px -0.5px #202020;
+}
+
+#healNumberHero.active,
+#healNumberFjende.active {
+  margin: 0;
+  color: #42ca18;
+  font-weight: bold;
+  animation: flyUpAndDisappear 2s ease-out forwards;
+  text-shadow:
+    0.5px 0.5px #202020,
+    -0.5px 0.5px #202020,
+    -0.5px -0.5px #202020,
+    0.5px -0.5px #202020;
+}
+
+@keyframes flyUpAndDisappear {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+
+#hpBar {
+  width: 240px;
+  background-color: #333333;
+  border-radius: 12px;
+  border: 4px solid #2e2e2e;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#manaBar {
+  width: 240px;
+  background-color: #333333;
+  border-radius: 12px;
+  border: 4px solid #2e2e2e;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#expBar {
+  width: auto;
+  background-color: #333333;
+  border-radius: 12px;
+  margin: 10px 10px 0px 10px;
+  border: 4px solid #2e2e2e;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+#hpFill {
+  width: 100%;
+  height: 40px;
+  background-color: #f81212;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.2s;
+}
+
+#manaFill {
+  width: 100%;
+  height: 40px;
+  background-color: #313fbb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.2s;
+}
+
+#expFill {
+  width: 0%;
+  height: 40px;
+  background-color: #cac839;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.5s;
+}
+
+#hpFillFjende {
+  width: 100%;
+  height: 40px;
+  background-color: #f81212;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.2s;
+}
+
+#manaFillFjende {
+  width: 100%;
+  height: 40px;
+  background-color: #313fbb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.2s;
+}
+
+#hpialtdig,
+#hpialtfjende,
+#mpialtdig,
+#mpialtfjende,
+#HPdig,
+#HPfjende,
+#mpDig,
+#mpfjende,
+#exp {
+  margin: 0;
+  font-size: 25px;
+  z-index: 2;
+  position: relative;
+  color: #e7dfdf;
+  text-shadow:
+    1px 1px #333333,
+    -1px 1px #333333,
+    -1px -1px #333333,
+    1px -1px #333333;
+}
+
+.kampfaerdig {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  height: 580px;
+  width: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Billeder/scroll_kampslut.png");
+  background-size: 580px 580px;
+}
+
+.kampfaerdig p {
+  margin-top: 0;
+}
