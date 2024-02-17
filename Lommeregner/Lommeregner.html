@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lommeregner</title>
+    <link rel="stylesheet" href="Lommeregner.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="Lommeregner">
+        <div class="input" contenteditable="true" data-placeholder="0"></div>
+
+        <div class="buttons">
+          <div class="row" id="raekke1">
+            <div id="clear">C</div>
+            <div class="operator">(</div>
+            <div class="operator">)</div>
+            <div class="operator">+</div>
+          </div>
+
+          <div class="row" id="raekke2">
+            <div class="tal">7</div>
+            <div class="tal">8</div>
+            <div class="tal">9</div>
+            <div class="operator">-</div>
+          </div>
+
+          <div class="row" id="raekke3">
+            <div class="tal">4</div>
+            <div class="tal">5</div>
+            <div class="tal">6</div>
+            <div class="operator">*</div>
+          </div>
+
+          <div class="row" id="raekke4">
+            <div class="tal">1</div>
+            <div class="tal">2</div>
+            <div class="tal">3</div>
+            <div class="operator">/</div>
+          </div>
+
+          <div class="row" id="raekke5">
+            <div class="tal">0</div>
+            <div class="operator">.</div>
+            <div id="slet"><img src="delete_white.png" alt="slet_ikon" /></div>
+            <div id="resultat">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Lommeregner.js"></script>
+    <!-- https://codepen.io/lalwanivikas/details/eZxjqo -->
+  </body>
+</html>
