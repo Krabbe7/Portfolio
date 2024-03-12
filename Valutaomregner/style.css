@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    width: 500px;
+    margin: 4% auto;
+}
+
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #315bab;
+    border-radius: 5px;
+    padding: 40px 0px;
+}
+
+.container_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+h1 {
+    margin: 0px 0px 20px 0px;
+}
+
+#belob {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: solid 2px #7a7a7a;
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+select {
+    height: 40px;
+    font-size: 15px;
+    height: 30px;
+}
+
+#ombyt {
+    Width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #315bab;
+}
+
+img {
+    Width: 25px;
+    height: 25px;
+}
+
+p {
+    font-size: 20px;
+    margin: 0px 10px 0px 0px;
+
+}
+
+#output {
+    width: 250px;
+    border: solid 2px #315bab;
+    margin: 0px;
+    font-size: 20px;
+    padding: 6px 10px;
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#konverter {
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #315bab;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+#konverter:hover {
+    background-color: #2a86cc;
+}
+
+#error {
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    background-color: #F44336;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+
+}
+
+#error p {
+    font-size: 16px;
+    margin: 0px;
+}

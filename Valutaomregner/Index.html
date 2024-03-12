@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Valutaomregner</h1>
+        <input id="belob" type="number" placeholder="0">
+
+        <div id="error">
+            <p>Beløbet kan ikke være 0 eller tom</p>
+        </div>
+
+        <div class="container_inner">
+            <p>Fra:</p>
+            <select name="valutaFra" id="valutaFra">
+                <option value="AUD">AUD</option>
+                <option value="ATS">ATS</option>
+                <option value="BEF">BEF</option>
+                <option value="BRL">BRL</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="DEM">DEM</option>
+                <option value="DKK" selected>DKK</option>
+                <option value="ESP">ESP</option>
+                <option value="EUR">EUR</option>
+                <option value="FIM">FIM</option>
+                <option value="FRF">FRF</option>
+                <option value="GBP">GBP</option>
+                <option value="GRD">GRD</option>
+                <option value="HKD">HKD</option>
+                <option value="IEP">IEP</option>
+                <option value="INR">INR</option>
+                <option value="IRR">IRR</option>
+                <option value="ITL">ITL</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="LKR">LKR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NLG">NLG</option>
+                <option value="NZD">NZD</option>
+                <option value="PTE">PTE</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TWD">TWD</option>
+                <option value="USD">USD</option>
+                <option value="ZAR">ZAR</option>
+            </select><br>
+            <button id="ombyt"><img src="Billeder/change.png" alt="ombyt valuta ikon"></button>
+            <p>Til:</p>
+            <select name="valutaTil" id="valutaTil">
+                <option value="AUD">AUD</option>
+                <option value="ATS">ATS</option>
+                <option value="BEF">BEF</option>
+                <option value="BRL">BRL</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="DEM">DEM</option>
+                <option value="DKK">DKK</option>
+                <option value="ESP">ESP</option>
+                <option value="EUR" selected>EUR</option>
+                <option value="FIM">FIM</option>
+                <option value="FRF">FRF</option>
+                <option value="GBP">GBP</option>
+                <option value="GRD">GRD</option>
+                <option value="HKD">HKD</option>
+                <option value="IEP">IEP</option>
+                <option value="INR">INR</option>
+                <option value="IRR">IRR</option>
+                <option value="ITL">ITL</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="LKR">LKR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NLG">NLG</option>
+                <option value="NZD">NZD</option>
+                <option value="PTE">PTE</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TWD">TWD</option>
+                <option value="USD">USD</option>
+                <option value="ZAR">ZAR</option>
+            </select><br>
+        </div>
+        <button id="konverter">Konverter</button>
+
+
+        <p id="output">0</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
